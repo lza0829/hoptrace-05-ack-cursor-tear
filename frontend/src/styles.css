@@ -344,3 +344,92 @@ a { color: inherit; text-decoration: none; }
   .brand-strip { grid-template-columns: 1fr; }
   .chip-nav { justify-content: flex-start; }
 }
+
+/* ACK 游标治理 */
+.ack-chip {
+  display: block;
+  margin-top: 6px;
+  padding: 3px 6px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--mint);
+  background: #e7f1eb;
+  border: 1px solid var(--line);
+}
+.axis-sub {
+  font-family: var(--display);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  margin: 18px 0 10px;
+  color: var(--forest-2);
+}
+.pending-head { color: var(--amber); }
+.row-pending td { color: #8a6208; }
+.row-pending { background: #fdf7ea; }
+
+.ack-control {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.ack-input {
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  font: inherit;
+  font-family: var(--mono);
+  background: #fff;
+}
+.ack-ok { color: var(--mint); font-weight: 600; }
+.ack-bad { color: var(--danger); font-weight: 600; }
+.ack-warn { color: var(--amber); font-weight: 600; }
+.conclusion { color: var(--forest-2); }
+
+.dot.pending {
+  background: var(--amber);
+  box-shadow: 0 0 0 3px rgba(212, 146, 10, 0.25);
+}
+
+.block-title {
+  font-family: var(--display);
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  margin: 22px 0 10px;
+  color: var(--forest-2);
+}
+.mono { font-family: var(--mono); }
+.small { font-size: 12px; }
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+.demo-col {
+  border: 1px solid var(--line);
+  background: #f0f6f2;
+  padding: 12px 14px;
+}
+.demo-col h3 {
+  margin: 0 0 10px;
+  font-family: var(--display);
+  font-size: 14px;
+  letter-spacing: 0.06em;
+}
+.demo-step {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--line);
+}
+.demo-step-head { font-weight: 600; font-size: 13px; margin-bottom: 2px; }
+.demo-verdict {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--amber);
+  background: #fbf6ea;
+  font-size: 13px;
+  line-height: 1.6;
+}
+@media (max-width: 720px) {
+  .demo-grid { grid-template-columns: 1fr; }
+}
